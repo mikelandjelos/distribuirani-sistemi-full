@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "SimplePingServer";
+
+// Ove importove mozes da zapamtis i radis ih po default-u
+import "google/protobuf/empty.proto";       // google.protobuf.Empty
+import "google/protobuf/wrappers.proto";    // google.protobuf.StringValue, google.protobuf.Int32Value, ...
+
+package simple_ping;
+
+service SimplePing {
+  rpc Ping (google.protobuf.Empty) returns (google.protobuf.StringValue);
+}

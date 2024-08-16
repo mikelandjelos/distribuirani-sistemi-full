@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="MatricnaIzracunavanjaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MatricnaIzracunavanja" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMatricnaIzracunavanjaService_Postavi_InputMessage">
+    <wsdl:part name="parameters" element="tns:Postavi" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_Postavi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostaviResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_PreuzmiMatricu_InputMessage">
+    <wsdl:part name="parameters" element="tns:PreuzmiMatricu" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_PreuzmiMatricu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PreuzmiMatricuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_Sabiranje_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sabiranje" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_Sabiranje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SabiranjeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_MnozenjeMatricom_InputMessage">
+    <wsdl:part name="parameters" element="tns:MnozenjeMatricom" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_MnozenjeMatricom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MnozenjeMatricomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_MnozenjeSkalarom_InputMessage">
+    <wsdl:part name="parameters" element="tns:MnozenjeSkalarom" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_MnozenjeSkalarom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MnozenjeSkalaromResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_Transponuj_InputMessage">
+    <wsdl:part name="parameters" element="tns:Transponuj" />
+  </wsdl:message>
+  <wsdl:message name="IMatricnaIzracunavanjaService_Transponuj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransponujResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMatricnaIzracunavanjaService">
+    <wsdl:operation name="Postavi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/Postavi" message="tns:IMatricnaIzracunavanjaService_Postavi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/PostaviResponse" message="tns:IMatricnaIzracunavanjaService_Postavi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PreuzmiMatricu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/PreuzmiMatricu" message="tns:IMatricnaIzracunavanjaService_PreuzmiMatricu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/PreuzmiMatricuResponse" message="tns:IMatricnaIzracunavanjaService_PreuzmiMatricu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sabiranje">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/Sabiranje" message="tns:IMatricnaIzracunavanjaService_Sabiranje_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/SabiranjeResponse" message="tns:IMatricnaIzracunavanjaService_Sabiranje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MnozenjeMatricom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/MnozenjeMatricom" message="tns:IMatricnaIzracunavanjaService_MnozenjeMatricom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/MnozenjeMatricomResponse" message="tns:IMatricnaIzracunavanjaService_MnozenjeMatricom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MnozenjeSkalarom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/MnozenjeSkalarom" message="tns:IMatricnaIzracunavanjaService_MnozenjeSkalarom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/MnozenjeSkalaromResponse" message="tns:IMatricnaIzracunavanjaService_MnozenjeSkalarom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Transponuj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/Transponuj" message="tns:IMatricnaIzracunavanjaService_Transponuj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMatricnaIzracunavanjaService/TransponujResponse" message="tns:IMatricnaIzracunavanjaService_Transponuj_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMatricnaIzracunavanjaService" type="tns:IMatricnaIzracunavanjaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Postavi">
+      <soap:operation soapAction="http://tempuri.org/IMatricnaIzracunavanjaService/Postavi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreuzmiMatricu">
+      <soap:operation soapAction="http://tempuri.org/IMatricnaIzracunavanjaService/PreuzmiMatricu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sabiranje">
+      <soap:operation soapAction="http://tempuri.org/IMatricnaIzracunavanjaService/Sabiranje" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MnozenjeMatricom">
+      <soap:operation soapAction="http://tempuri.org/IMatricnaIzracunavanjaService/MnozenjeMatricom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MnozenjeSkalarom">
+      <soap:operation soapAction="http://tempuri.org/IMatricnaIzracunavanjaService/MnozenjeSkalarom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Transponuj">
+      <soap:operation soapAction="http://tempuri.org/IMatricnaIzracunavanjaService/Transponuj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MatricnaIzracunavanjaService">
+    <wsdl:port name="BasicHttpBinding_IMatricnaIzracunavanjaService" binding="tns:BasicHttpBinding_IMatricnaIzracunavanjaService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/MatricnaIzracunavanja/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="b393667c-c528-4040-8fe6-4a75340073d0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/MatricnaIzracunavanja/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="657569fb-0f18-41bc-8531-6713503469f4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MatricnaIzracunavanja/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c7e50627-9f47-4fc0-ba75-789f79b75375" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MatricnaIzracunavanja/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2c132f74-8be7-4bcc-a2eb-50604a56d224" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MatricnaIzracunavanja/Service1/mex" />
+    <MetadataFile FileName="MatricnaIzracunavanja.xsd" MetadataType="Schema" ID="7b342170-9f29-44f4-a9fc-e018b5a55829" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MatricnaIzracunavanja/Service1/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="816f6129-50b4-4e09-8313-6afa4255e190" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MatricnaIzracunavanja/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

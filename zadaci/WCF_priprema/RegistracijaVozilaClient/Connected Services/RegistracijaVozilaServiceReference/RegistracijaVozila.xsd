@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RegistracijaVozila" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RegistracijaVozila" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Vlasnik">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Jmbg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Prezime" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vlasnik" nillable="true" type="tns:Vlasnik" />
+  <xs:complexType name="Vozilo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Boja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Marka" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vozilo" nillable="true" type="tns:Vozilo" />
+  <xs:complexType name="Registracija">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdVozila" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JmbgVlasnika" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KrajRegistracije" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PocetakRegistracije" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Registracija" nillable="true" type="tns:Registracija" />
+  <xs:complexType name="ArrayOfVozilo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vozilo" nillable="true" type="tns:Vozilo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVozilo" nillable="true" type="tns:ArrayOfVozilo" />
+  <xs:complexType name="ArrayOfRegistracija">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Registracija" nillable="true" type="tns:Registracija" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegistracija" nillable="true" type="tns:ArrayOfRegistracija" />
+</xs:schema>

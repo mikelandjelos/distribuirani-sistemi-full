@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "SimpleMessagingClient";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+package simple_messaging;
+
+// The greeting service definition.
+service SimpleMessaging {
+    // Returns ID of the written message, after adding the sent message.
+    rpc SendMessage (google.protobuf.StringValue) returns (google.protobuf.StringValue);
+
+    // Receives ID of a message (Int32), and returns True if message deleted succesfully, else False;
+    rpc DeleteMessage (google.protobuf.StringValue) returns (google.protobuf.BoolValue);
+
+    rpc ListMessages (google.protobuf.Empty) returns (stream Message);
+}
+
+message Message {
+    string id = 1;
+    string contents = 2;
+}

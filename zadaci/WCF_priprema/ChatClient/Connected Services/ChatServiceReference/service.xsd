@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Chat" />
+  <xs:element name="Registracija">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nadimak" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sifra" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrijavaOdjava">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nadimak" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sifra" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Posalji">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Chat" minOccurs="0" name="poruka" nillable="true" type="q1:Poruka" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IstorijaPrimljenihPoruka">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nadimak" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="od" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="do" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistracijaEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="povratneInformacije" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrijavaOdjavaEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="povratneInformacije" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PoslataPorukaEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Chat" minOccurs="0" name="poruka" nillable="true" type="q2:Poruka" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZatrazenaIstorijaPrimljenihPorukaEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Chat" minOccurs="0" name="istorijaPoruka" nillable="true" type="q3:ArrayOfPoruka" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

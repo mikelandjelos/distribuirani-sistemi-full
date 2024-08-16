@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ce15f7e7-49ac-45cb-b96d-77ddb1810c2e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/RegistracijaVozila/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="10268a1e-4cab-412a-8fc1-ab0d86317fd0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaVozila/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="42f190d5-03ca-41c8-a78a-08d1950050e2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaVozila/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6fdd767d-56c4-41bf-becd-72563c655af6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaVozila/Service1/mex" />
+    <MetadataFile FileName="RegistracijaVozila.xsd" MetadataType="Schema" ID="ac8f4a10-716f-41be-a936-d38a9d9d7bd5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaVozila/Service1/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="f5e9120a-8fb8-4b57-adef-2e98d9b84730" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaVozila/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

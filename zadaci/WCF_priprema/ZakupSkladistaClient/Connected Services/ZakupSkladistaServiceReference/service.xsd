@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/ZakupSkladista" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="ZakupiSkladiste">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ZakupSkladista" minOccurs="0" name="vlasnik" nillable="true" type="q1:Vlasnik" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ZakupSkladista" minOccurs="0" name="skladiste" nillable="true" type="q2:Skladiste" />
+        <xs:element minOccurs="0" name="pocetakZakupa" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="krajZakupa" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZakupiSkladisteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ZakupSkladista" minOccurs="0" name="ZakupiSkladisteResult" nillable="true" type="q3:Zakup" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VratiAktivnaSkladista">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jmbgVlasnika" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VratiAktivnaSkladistaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ZakupSkladista" minOccurs="0" name="VratiAktivnaSkladistaResult" nillable="true" type="q4:ArrayOfSkladiste" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VratiVlasnikeAktivnihSkladista">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VratiVlasnikeAktivnihSkladistaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ZakupSkladista" minOccurs="0" name="VratiVlasnikeAktivnihSkladistaResult" nillable="true" type="q5:ArrayOfVlasnik" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VratiSkladistaSaIstorijomZakupa">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VratiSkladistaSaIstorijomZakupaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="VratiSkladistaSaIstorijomZakupaResult" nillable="true" type="q6:ArrayOfKeyValueOfSkladisteArrayOfZakupQf540_SwV" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
