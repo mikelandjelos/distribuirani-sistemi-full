@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="a13133de-c77d-4209-b5dd-081d84224cd4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/RegistracijaParcela/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="852c7ddc-e959-4613-9bc8-199c3b0018b6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaParcela/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="eef999f5-e3f2-4f17-b241-284372d0c1b0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaParcela/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="3216ca78-81c0-44ea-bd16-c702bd8d67b3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaParcela/Service1/mex" />
+    <MetadataFile FileName="RegistracijaParcela.xsd" MetadataType="Schema" ID="0b6f5bb9-2dd2-42c6-a463-4cbb1742d65e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaParcela/Service1/mex" />
+    <MetadataFile FileName="System.xsd" MetadataType="Schema" ID="2cd90852-b9ab-4833-a34a-cdb260da2054" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RegistracijaParcela/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

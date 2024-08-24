@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/RegistracijaParcela" />
+  <xs:complexType name="ArrayOfTupleOfdecimaldecimal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TupleOfdecimaldecimal" nillable="true" type="tns:TupleOfdecimaldecimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTupleOfdecimaldecimal" nillable="true" type="tns:ArrayOfTupleOfdecimaldecimal" />
+  <xs:complexType name="TupleOfdecimaldecimal">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TupleOf{0}{1}{#}" Namespace="http://schemas.datacontract.org/2004/07/System" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="decimal" Namespace="http://www.w3.org/2001/XMLSchema" />
+          <GenericParameter Name="decimal" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="m_Item1" type="xs:decimal" />
+      <xs:element name="m_Item2" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TupleOfdecimaldecimal" nillable="true" type="tns:TupleOfdecimaldecimal" />
+  <xs:complexType name="ArrayOfTupleOfParceladecimal16GPT_Sgl">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TupleOfParceladecimal16GPT_Sgl" nillable="true" type="tns:TupleOfParceladecimal16GPT_Sgl" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTupleOfParceladecimal16GPT_Sgl" nillable="true" type="tns:ArrayOfTupleOfParceladecimal16GPT_Sgl" />
+  <xs:complexType name="TupleOfParceladecimal16GPT_Sgl">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TupleOf{0}{1}{#}" Namespace="http://schemas.datacontract.org/2004/07/System" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Parcela" Namespace="http://schemas.datacontract.org/2004/07/RegistracijaParcela" />
+          <GenericParameter Name="decimal" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/RegistracijaParcela" name="m_Item1" nillable="true" type="q1:Parcela" />
+      <xs:element name="m_Item2" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TupleOfParceladecimal16GPT_Sgl" nillable="true" type="tns:TupleOfParceladecimal16GPT_Sgl" />
+</xs:schema>
