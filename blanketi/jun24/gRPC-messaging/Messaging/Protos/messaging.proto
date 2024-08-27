@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Messaging";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+package messaging;
+
+service Messaging {
+  rpc SendMessage(Message) returns (google.protobuf.StringValue);
+  rpc DeleteMessage(google.protobuf.StringValue) returns (Message);
+  rpc ListMessages(google.protobuf.Empty) returns (stream Message);
+}
+
+message Message {
+  string uuid = 1;
+  string contents = 2;
+}
